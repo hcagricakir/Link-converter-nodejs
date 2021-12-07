@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "9db27881-e7a4-4d3b-9bc5-edd7ad36ac26",
+		"name": "db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "url-to-deeplink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"https://www.longUrl.com/casio/saat-p-1925865?boutiqueId=439892&merchantId=105064\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/url-to-deeplink",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"url-to-deeplink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "url-to-deeplink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"https://www.longUrl.com/sr?q=elbise\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/url-to-deeplink",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"url-to-deeplink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "url-to-deeplink",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"https://www.longUrl.com/Hesabim/#/Siparislerim\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/url-to-deeplink",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"url-to-deeplink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deeplink-to-url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"dl://?Page=Product&ContentId=1925865&CampaignId=439892&MerchantId=105064\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/deeplink-to-url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deeplink-to-url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deeplink-to-url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"dl://?Page=Search&Query=elbise\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/deeplink-to-url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deeplink-to-url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deeplink-to-url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"request\":\"dl://?Page=Orders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/deeplink-to-url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deeplink-to-url"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
