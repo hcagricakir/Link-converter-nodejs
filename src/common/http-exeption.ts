@@ -12,7 +12,7 @@ export class HttpException extends Error{
 
 export class DatabaseError extends HttpException {
     constructor(message: string) {
-        super(500, message || "Something went wrong", 1);
+        super(501, message || "Something went wrong", 1);
     }
 }
 

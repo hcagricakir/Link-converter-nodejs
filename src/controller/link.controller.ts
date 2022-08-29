@@ -44,6 +44,10 @@ export class LinkController {
             })
     }
 
+    deeplinktourlv2(req: Request, res: Response, next: NextFunction) {
+       return(2);
+    }
+
     public routes() {
 
         this.router.post('/url-to-deeplink', this.urlToDeeplink.bind(this));
